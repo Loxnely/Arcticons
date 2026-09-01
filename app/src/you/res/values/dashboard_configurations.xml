@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="home_title">Arcticons Material You</string>
+    <string name="home_title">🎨 Arcticons Material You</string>
 
     <string name="default_theme">auto</string>
 
     <bool name="includes_adaptive_icons">true</bool>
 
-    <string name="navigation_view_header_title">Arcticons Material You</string>
+    <string name="navigation_view_header_title">🎨 Arcticons Material You</string>
 
     <string name="rate_and_review_link">https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play</string>
 

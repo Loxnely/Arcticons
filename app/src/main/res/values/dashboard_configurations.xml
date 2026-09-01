@@ -39,11 +39,15 @@
     <!-- Shared home description shown below the home image on all flavors -->
     <string name="home_description">
         <![CDATA[
-            <p><b>Welcome</b> — Arcticons is a line-based <a href="https://github.com/Arcticons-Team/Arcticons">open-source</a> icon pack, made by contributors around the world.</p>
-            <p><b>Need help?</b> Visit <a href="https://docs.arcticons.com/?utm_source=app">our knowledge base</a> or <a href="mailto:hello@arcticons.com">email us</a> with questions.</p>
-            <p><b>Priority requests</b> — Get icons made faster with <a href="https://ko-fi.com/donno_">Ko-fi</a> support.</p>
-            <p><b>Stay updated</b> — Follow Arcticons on <a href="https://fosstodon.org/@arcticons">Mastodon</a>, <a href="https://bsky.app/profile/arcticons.com">Bluesky</a>, or <a href="https://t.me/arcticons">Telegram</a>.</p>
-            <p>Stand with 🇺🇦 &amp; 🇵🇸</p>
+            <p>❄️ <b>Welcome</b><br>Arcticons is a line-based <a href="https://github.com/Arcticons-Team/Arcticons">open-source</a> icon pack, made by contributors around the world.</p>
+            <br>
+            <p>📖 <b>Need help?</b><br>Visit <a href="https://docs.arcticons.com/?utm_source=app">our knowledge base</a> or <a href="mailto:hello@arcticons.com">email us</a> with questions.</p>
+            <br>
+            <p>🎨 <b>Priority requests</b><br>Get icons made faster with <a href="https://ko-fi.com/donno_">Ko-fi</a> support.</p>
+            <br>
+            <p>📣 <b>Stay updated</b><br>Follow Arcticons on <a href="https://fosstodon.org/@arcticons">Mastodon</a>, <a href="https://bsky.app/profile/arcticons.com">Bluesky</a>, or <a href="https://t.me/arcticons">Telegram</a>.</p>
+            <br>
+            <p>🤝 Stand with 🇺🇦 &amp; 🇵🇸</p>
         ]]>
     </string>
 
