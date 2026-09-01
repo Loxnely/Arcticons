@@ -1,7 +1,5 @@
 package com.donnnno.arcticons.applications;
 
-import android.content.pm.PackageManager;
-
 import androidx.annotation.NonNull;
 
 import com.donnnno.arcticons.R;
@@ -21,16 +19,61 @@ public class CandyBar extends CandyBarApplication {
     public Configuration onInit() {
         Configuration configuration = new Configuration();
 
-        configuration.setAutomaticIconsCountEnabled(false); // Enable or disable automatic icons counting
-        // Get the value from the resources
-        int customIconsCount = getResources().getInteger(R.integer.custom_icons_count);
-        // Set the value to the configuration
-        configuration.setCustomIconsCount(customIconsCount);
-
+        // Icons
+        configuration.setAutomaticIconsCountEnabled(false);
+        configuration.setCustomIconsCount(getResources().getInteger(R.integer.custom_icons_count));
         configuration.setGenerateAppFilter(true);
+        configuration.setShowTabAllIcons(true);
+        configuration.setCategoryForTabAllIcons(new String[]{
+                "New", "Folders", "Calendar", "Google", "Microsoft", "Games",
+                "System", "Emoji", "Symbols", "Numbers", "Letters", "0-9", "A-Z"
+        });
+        configuration.setShadowEnabled(false);
 
+        // Home screen
+        configuration.setDonationLinks(new DonationLink[]{
+                new DonationLink(
+                        "paypal",
+                        "PayPal",
+                        "Support me on Paypal",
+                        "https://www.paypal.me/onnovdd"),
+                new DonationLink(
+                        "liberapay",
+                        "Liberapay",
+                        "Support me on Liberapay",
+                        "https://liberapay.com/Donno/"),
+                new DonationLink(
+                        "kofi",
+                        "Ko-Fi",
+                        "Support me on Ko-Fi",
+                        "https://ko-fi.com/donno_")
+        });
+
+        configuration.setOtherApps(new OtherApp[]{
+                new OtherApp(
+                        "arcticons",
+                        "Arcticons",
+                        "Arcticons, with white lines",
+                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons"),
+                new OtherApp(
+                        "arcticons_black",
+                        "Arcticons Black",
+                        "Arcticons, with black lines.",
+                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light"),
+                new OtherApp(
+                        "arcticons_material_you",
+                        "Arcticons Material You",
+                        "Arcticons, but with a material you flavor!",
+                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play"),
+                new OtherApp(
+                        "arcticons_day_night",
+                        "Arcticons Day & Night",
+                        "An experimental version of Arcticons that switches between dark & light mode.",
+                        "https://github.com/Donnnno/Arcticons/releases")
+        });
+
+        // Icon requests
         configuration.setEmailBodyGenerator(requests -> {
-            PackageManager packageManager = getApplicationContext().getPackageManager();
             StringBuilder emailBody = new StringBuilder();
             boolean first = true;
 
@@ -41,7 +84,7 @@ public class CandyBar extends CandyBarApplication {
                     first = false;
                 }
 
-                    emailBody.append(request.getName())
+                emailBody.append(request.getName())
                         .append("\r\n")
                         .append(request.getActivity())
                         .append("\r\n");
@@ -50,75 +93,17 @@ public class CandyBar extends CandyBarApplication {
             return emailBody.toString();
         });
 
-        configuration.setShowTabAllIcons(true);
-        configuration.setCategoryForTabAllIcons(new String[]{
-                "New","Folders","Calendar","Google","Microsoft","Games","System","Emoji","Symbols","Numbers","Letters","0-9","A-Z"
-        });
-
-        DonationLink[] donationLinks = new DonationLink[]{
-                new DonationLink(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "paypal",
-                        "PayPal",
-                        "Support me on Paypal",
-                        "https://www.paypal.me/onnovdd"),
-                new DonationLink(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "liberapay",
-                        "Liberapay",
-                        "Support me on Liberapay",
-                        "https://liberapay.com/Donno/"),
-                new DonationLink(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "kofi",
-                        "Ko-Fi",
-                        "Support me on Ko-Fi",
-                        "https://ko-fi.com/donno_")
-        };
-        configuration.setDonationLinks(donationLinks);
-
-        configuration.setShadowEnabled(false);
-
         configuration.setFilterRequestHandler((request) -> {
-            // Return true to include the request
-            // Return false to exclude the request
-
             String pkg = request.getPackageName();
             if (pkg == null) return true;
-            if (pkg.startsWith("org.chromium.webapk") || pkg.startsWith("com.sec.android.app.sbrowser.webapk") || pkg.endsWith("com.google.android.archive.ReactivateActivity") ) {
+            if (pkg.startsWith("org.chromium.webapk")
+                    || pkg.startsWith("com.sec.android.app.sbrowser.webapk")
+                    || pkg.endsWith("com.google.android.archive.ReactivateActivity")) {
                 request.setAvailableForRequest(false);
                 request.setInfoText("This icon is a web shortcut and not associated with an Android app. Unfortunately it cannot be requested at this time.\n\nIn many launchers, you can long-press the app icon in the drawer and pick an existing icon from the icon pack.");
             }
             return true;
         });
-
-        OtherApp[] otherApps = new OtherApp[] {
-                new OtherApp(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "arcticons_material_you",
-                        "Arcticons Material You",
-                        "Arcticons, but with a material you flavor!",
-                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play"),
-                new OtherApp(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "arcticons",
-                        "Arcticons",
-                        "Arcticons, with white lines",
-                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons"),
-                new OtherApp(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "arcticons_black",
-                        "Arcticons Black",
-                        "Arcticons, with black lines.",
-                        "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light"),
-                new OtherApp(
-                        // You can use png file (without extension) inside drawable-nodpi folder or url
-                        "arcticons_day_night",
-                        "Arcticons Day & Night",
-                        "An experimental version of Arcticons that switches between dark & light mode.",
-                        "https://github.com/Donnnno/Arcticons/releases")
-        };
-        configuration.setOtherApps(otherApps);
 
         return configuration;
     }
