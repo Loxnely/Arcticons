@@ -25,8 +25,8 @@ public class CandyBar extends CandyBarApplication {
         configuration.setGenerateAppFilter(true);
         configuration.setShowTabAllIcons(true);
         configuration.setCategoryForTabAllIcons(new String[]{
-                "New", "Folders", "Calendar", "Google", "Microsoft", "Games",
-                "System", "Emoji", "Symbols", "Numbers", "Letters", "0-9", "A-Z"
+                "✨ New", "📁 Folders", "📅 Calendar", "🔍 Google", "🪟 Microsoft", "🎮 Games",
+                "⚙️ System", "😀 Emoji", "🔣 Symbols", "🔢 Numbers", "🔤 Letters", "🔟 0-9", "🔠 A-Z"
         });
         configuration.setShadowEnabled(false);
 
@@ -34,17 +34,17 @@ public class CandyBar extends CandyBarApplication {
         configuration.setDonationLinks(new DonationLink[]{
                 new DonationLink(
                         "paypal",
-                        "PayPal",
-                        "Support me on Paypal",
+                        "💳 PayPal",
+                        "Support me on PayPal",
                         "https://www.paypal.me/onnovdd"),
                 new DonationLink(
                         "liberapay",
-                        "Liberapay",
+                        "💜 Liberapay",
                         "Support me on Liberapay",
                         "https://liberapay.com/Donno/"),
                 new DonationLink(
                         "kofi",
-                        "Ko-Fi",
+                        "☕ Ko-Fi",
                         "Support me on Ko-Fi",
                         "https://ko-fi.com/donno_")
         });
@@ -52,22 +52,22 @@ public class CandyBar extends CandyBarApplication {
         configuration.setOtherApps(new OtherApp[]{
                 new OtherApp(
                         "arcticons",
-                        "Arcticons",
+                        "❄️ Arcticons",
                         "Arcticons, with white lines",
                         "https://play.google.com/store/apps/details?id=com.donnnno.arcticons"),
                 new OtherApp(
                         "arcticons_black",
-                        "Arcticons Black",
+                        "🖤 Arcticons Black",
                         "Arcticons, with black lines.",
                         "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light"),
                 new OtherApp(
                         "arcticons_material_you",
-                        "Arcticons Material You",
+                        "🎨 Arcticons Material You",
                         "Arcticons, but with a material you flavor!",
                         "https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play"),
                 new OtherApp(
                         "arcticons_day_night",
-                        "Arcticons Day & Night",
+                        "🌓 Arcticons Day & Night",
                         "An experimental version of Arcticons that switches between dark & light mode.",
                         "https://github.com/Donnnno/Arcticons/releases")
         });

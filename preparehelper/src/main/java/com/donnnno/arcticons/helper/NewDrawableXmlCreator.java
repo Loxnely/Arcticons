@@ -75,7 +75,7 @@ public class NewDrawableXmlCreator {
 
         // Write the new drawables to the XML file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(newDrawablesPath))) {
-            writer.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n\t<version>1</version>\n\t<category title=\"New\" />\n");
+            writer.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n\t<version>1</version>\n\t<category title=\"✨ New\" />\n");
             String drawablePre = "\t<item drawable=\"";
             String drawableSuf = "\" />\n";
             for (String drawable : sortedNewDrawables) {

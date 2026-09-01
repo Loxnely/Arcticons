@@ -118,19 +118,19 @@ public class XMLCreator {
         // Build output
         StringBuilder output = new StringBuilder("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n<version>1</version>\n");
 
-        appendCategory(output, "New", newDrawables);
-        appendCategory(output, "Folders", folder);
-        appendCategory(output, "Calendar", calendar);
-        appendCategory(output, "Google", google);
-        appendCategory(output, "Microsoft", microsoft);
-        appendCategory(output, "Games", games);
-        appendCategory(output, "System", system);
-        appendCategory(output, "Emoji", emoji);
-        appendCategory(output, "Symbols", symbols);
-        appendCategory(output, "Numbers", numbers);
-        appendCategory(output, "Letters", letters);
-        appendCategory(output, "0-9", number);
-        appendCategory(output, "A-Z", drawables);
+        appendCategory(output, "✨ New", newDrawables);
+        appendCategory(output, "📁 Folders", folder);
+        appendCategory(output, "📅 Calendar", calendar);
+        appendCategory(output, "🔍 Google", google);
+        appendCategory(output, "🪟 Microsoft", microsoft);
+        appendCategory(output, "🎮 Games", games);
+        appendCategory(output, "⚙️ System", system);
+        appendCategory(output, "😀 Emoji", emoji);
+        appendCategory(output, "🔣 Symbols", symbols);
+        appendCategory(output, "🔢 Numbers", numbers);
+        appendCategory(output, "🔤 Letters", letters);
+        appendCategory(output, "🔟 0-9", number);
+        appendCategory(output, "🔠 A-Z", drawables);
 
         output.append("\n</resources>");
         

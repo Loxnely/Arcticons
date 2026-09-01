@@ -2,7 +2,7 @@
 <resources>
 <version>1</version>
 
-	<category title="New" />
+	<category title="✨ New" />
 	<item drawable="_3c_battery_manager" />
 	<item drawable="_3c_cpu_manager" />
 	<item drawable="abha" />
@@ -257,7 +257,7 @@
 	<item drawable="zoho_show" />
 	<item drawable="zoho_vault" />
 	
-	<category title="Folders" />
+	<category title="📁 Folders" />
 	<item drawable="folder_0" />
 	<item drawable="folder_1" />
 	<item drawable="folder_10" />
@@ -325,7 +325,7 @@
 	<item drawable="folder_won" />
 	<item drawable="folder_yen" />
 	
-	<category title="Calendar" />
+	<category title="📅 Calendar" />
 	<item drawable="calendar_1" />
 	<item drawable="calendar_10" />
 	<item drawable="calendar_11" />
@@ -544,7 +544,7 @@
 	<item drawable="calendar_tuta_8" />
 	<item drawable="calendar_tuta_9" />
 	
-	<category title="Google" />
+	<category title="🔍 Google" />
 	<item drawable="google_accessibility_scanner" />
 	<item drawable="google_admin" />
 	<item drawable="google_ads" />
@@ -632,7 +632,7 @@
 	<item drawable="google_webview_devtools" />
 	<item drawable="google_webview_devtools_beta" />
 	
-	<category title="Microsoft" />
+	<category title="🪟 Microsoft" />
 	<item drawable="microsoft_365" />
 	<item drawable="microsoft_365_admin" />
 	<item drawable="microsoft_advertising" />
@@ -690,7 +690,7 @@
 	<item drawable="xbox_gamepass" />
 	<item drawable="xbox_gamepass_beta" />
 	
-	<category title="Games" />
+	<category title="🎮 Games" />
 	<item drawable="_1010_klooni" />
 	<item drawable="_101_okey_plus" />
 	<item drawable="_12_orbits" />
@@ -1289,7 +1289,7 @@
 	<item drawable="zombie_tsunami" />
 	<item drawable="zombieville" />
 	
-	<category title="System" />
+	<category title="⚙️ System" />
 	<item drawable="bluetooth" />
 	<item drawable="browser" />
 	<item drawable="calculator" />
@@ -1325,7 +1325,7 @@
 	<item drawable="weather_alt" />
 	<item drawable="weather_alt_2" />
 	
-	<category title="Emoji" />
+	<category title="😀 Emoji" />
 	<item drawable="emoji_abacus" />
 	<item drawable="emoji_accordion" />
 	<item drawable="emoji_adhesive_bandage" />
@@ -1690,7 +1690,7 @@
 	<item drawable="emoji_x_ray" />
 	<item drawable="emoji_yin_yang" />
 	
-	<category title="Symbols" />
+	<category title="🔣 Symbols" />
 	<item drawable="currency_bitcoin" />
 	<item drawable="currency_conveter" />
 	<item drawable="currency_dollar" />
@@ -1707,7 +1707,7 @@
 	<item drawable="symbol_percent" />
 	<item drawable="symbol_question_mark" />
 	
-	<category title="Numbers" />
+	<category title="🔢 Numbers" />
 	<item drawable="number_0" />
 	<item drawable="number_1" />
 	<item drawable="number_10" />
@@ -1731,7 +1731,7 @@
 	<item drawable="number_circle_8" />
 	<item drawable="number_circle_9" />
 	
-	<category title="Letters" />
+	<category title="🔤 Letters" />
 	<item drawable="letter_lowercase_circle_a" />
 	<item drawable="letter_lowercase_circle_b" />
 	<item drawable="letter_lowercase_circle_c" />
@@ -1838,7 +1838,7 @@
 	<item drawable="letter_uppercase_square_y" />
 	<item drawable="letter_uppercase_square_z" />
 	
-	<category title="0-9" />
+	<category title="🔟 0-9" />
 	<item drawable="_001_taxis" />
 	<item drawable="_0h_h1" />
 	<item drawable="_0h_n0" />
@@ -1993,7 +1993,7 @@
 	<item drawable="_9_patch_editor" />
 	<item drawable="_9gag" />
 	
-	<category title="A-Z" />
+	<category title="🔠 A-Z" />
 	<item drawable="a101" />
 	<item drawable="a_better_camera" />
 	<item drawable="a_color_story" />
